@@ -1,0 +1,28 @@
+name: mpnn
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  # General dependencies
+  - python==3.8.*
+  - scipy==1.6.*
+  - pandas==1.*
+  - scikit-learn==1.0.*
+  - matplotlib==3.*
+
+  # For the MPNN
+  
+  # Related to molecular property prediction
+  - openbabel==3.*
+  - rdkit==2020.03.*
+  - ase==3.21.*
+  - networkx
+  
+  # Utilities
+  - tqdm
+  - jupyterlab
+  - psutil
+  - pytest
+  - pip
+  - pip:
+    - tensorflow
